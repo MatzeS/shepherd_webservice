@@ -56,6 +56,8 @@ ignore = [
     "SLF001",
     "N811", "N999",
     "RUF012",
+    "B008", # FastAPI intended use of Depends
+    "ANN102",
 ]
 
 [lint.per-file-ignores]
@@ -63,7 +65,7 @@ ignore = [
 
 [lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
-max-complexity = 10
+max-complexity = 12
 
 [lint.isort]
 force-single-line = true
